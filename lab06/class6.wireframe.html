@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> CSS Intro</title>
+        <style>
+            /*Right now: You are coding in CSS for the style aspect of the website*/
+            /*you can do multiple declaration per selector */
+            /*coral over rode on the p but font-family works for all tags*/
+
+            body { 
+                color: coral;
+                font-family: Arial, Helvetica, sans-serif;
+                /*The professor hates serif fonts like Times New Roman */
+               
+
+            }
+            p {
+                color:cadetblue;
+                font-size: 2em; /* This should be 2x the default size */
+                font-weight: bolder; /*This should be thicker than bold */
+                /*301 and 302 of the book have a whole list of properities that explains what they do*/
+                /*you can also go to w3schools but you need to know the synatax*/
+             } 
+             /*grouped selector, selects more than one element*/
+
+             p,li{ 
+                 text-align: center;
+             }
+            /*grouped selector, selects more than one element*/
+
+           li a{color:darkmagenta;}
+           /*descendant selector-the space mean we only styling a tags inside li tags*/
+           #firstp{ color:fuchsia;}
+           /*Above is a id selector, you can only use it once */
+           .otherthing {color:gold}
+           /*above is a class selector, it is pribably the most used in the css document
+           you can use class multiple times */
+           /*don't try to write syntax from memory*/
+
+
+
+        </style>
+    </head>
+    <body>
+        <!--id values must be unique. you can only use them one on the page-->
+        <p id="firstp"> Lorem Ipsum <a href="http://www.google.com">Google</a></p>
+        <!--class attirbute values can be used over and over again-->
+        <p class="otherthing"> Second Paragraph</p>
+        <p> Third Paragraph</p>
+        <!--use em or %: these are relative. it's depending on the size of your default font. Don't use absolute pixels etc. -->
+        <ul>
+            <li>
+                my list item<a href="http://www.google.com">Google</a>
+            </li>
+        </ul>
+        <!-- You are going to run into issues here. p in the CSS is more specific for the paragraphs tags and the body tag is for the more specific regions of the code. Such as the list-->
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,5 @@
+
+body {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+Grouped selectors p,ul,td,th {color:darkblue}
+Grouped selectors h1,h2 {color:#5F9EA0}
+.evenrow{color: gray;}
