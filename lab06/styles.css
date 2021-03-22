@@ -1,5 +1,7 @@
 
 body {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
 Grouped selectors p,ul,td,th {color:darkblue}
-Grouped selectors h1,h2 {color:#5F9EA0}
-.evenrow{color: gray;}
+h1,h2 {color:#5F9EA0}
+.evenrow{background-color:lightblue;}
+h1{font-size: 2em;}
+h2{font-size: 1em;}
