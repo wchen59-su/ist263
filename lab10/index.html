@@ -1,13 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <title> Wendy Chen - Bio </title>
         <link rel ="stylesheet" href= "styles.css"> 
         
         <style>
             .quote{float:right;}
+            h1 {font-size: 30px;}
+            h2 {font-size: 20px;}
+    
+            p {
+                font-size: 15px;
+                line-height: 50px;
+}           #skip{
+                position: absolute;
+                left:-999px;
+                background-color:white;
+                border:1px solid black;
+                
+            }
+            /*this position based on top left of viewport and pushes the skip link off screen*/
+            #skip:focus {
+                position:absolute;
+                left: 10px;
+            }
         </style>
        
  
@@ -18,12 +35,15 @@
             <a href="index.html">Home </a> |
             <a href="skills.html">Skills </a>|
             <a href="contact.html">Contact </a>
+            <a href="#maincontent" id="skip">Skip to Content</a>
+
         </nav>
         <header>
-            <img src="../lab05/bio_banner.jpg" alt="My website banner" class="banner1">
+            <img src="../lab05/bio_banner.jpg" alt="Quote about data analytics with a girl smiling in professional clothing">
         </header>
         
-        
+        <a id="maincontent"></a>
+
         <main>
         <h1> Wendy Chen's Biography</h1>
         <h2>Personal Information</h2>

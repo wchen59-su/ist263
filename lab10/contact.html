@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <title> Contacts  </title>
        <link rel ="stylesheet" href= "styles.css">
        <style>
@@ -24,20 +23,42 @@
            background:rgb(175, 223, 240);
            padding:20px;}
 
-           .secondrow{display:flex; flex-wrap:wrap;}
+            h1 {font-size: 30px;}
+            
+    
+            p {
+                font-size: 15px;
+                line-height: 50px;
+}           #skip{
+                position: absolute;
+                left:-999px;
+                background-color:white;
+                border:1px solid black;
+                
+            }
+            /*this position based on top left of viewport and pushes the skip link off screen*/
+            #skip:focus {
+                position:absolute;
+                left: 10px;
+            }
 
        </style>
         
 
     </head>
+    
 
     <body>
         <nav>
             <a href="index.html">Home </a> |
             <a href="skills.html">Skills </a>|
             <a href="contact.html">Contact </a>
+            <a href="#maincontent" id="skip">Skip to Content</a>
+
         </nav>
-        
+
+        <a id="maincontent"></a>
+
         <h1>Contacts</h1>
         <br>
         <div class="firstrow">
@@ -60,9 +81,9 @@
         </div>
 
         <div class="secondrow">
-       
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.152537749965!2d-76.13555668452203!3d43.03822197914713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fca0f3225%3A0xb7e0bcbf2e1292f6!2sHinds%20Hall%2C%20343%20Hinds%20Hall%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1614271842323!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
-        
+        <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.152537749965!2d-76.13555668452203!3d43.03822197914713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fca0f3225%3A0xb7e0bcbf2e1292f6!2sHinds%20Hall%2C%20343%20Hinds%20Hall%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1614271842323!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" alt="map to syracuse university's ischool" ></iframe>
+        </div>
 
         <div class="form">
         <br>

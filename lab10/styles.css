@@ -3,9 +3,4 @@ nav a {color:#edeef7;}
 nav a:hover{background-color:#4ad3dd;}
 nav{padding: 10px;}
 nav{margin-bottom: 30px;}
-.banner1{max-width:100%}
-@media only screen and (max-width:600px)
-{
-    nav{width:100%}
-}
- 
+
