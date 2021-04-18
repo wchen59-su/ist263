@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <!-- ^^ this makes the page load full size on mobile-->
+        <title>Unit 9 Notes Responsive Design</title>
+        <style> /*Wendy Chen's Style Sheet*/
+            body {font-family: Arial, Helvetica, sans-serif;}
+            .row1 { 
+                padding: 80px;
+                margin-top: 40px;}
+            .row1 div {
+                padding: 40px;
+            }
+            .banner{width:100%;}   
+              /*This ensures the size of the image follows to scale with the sizeing of the web page. */
+
+            .bannersmall{max-width:100%;}
+            /*If it can be the max screen size, it will, other wise, it will just stay the same so that is to reserve the quality of the image (pixelation is a bad thing in web design*/
+
+            /*doesn't go past its file size, doesnt pixelate*/
+            /*Max-width is the preffered method */
+
+            .row1{display:flex; flex-wrap:wrap;}
+            /*flex-wrap makes the text wrap if it doesn't fit on the website */
+            .box1, .box2, .box3{flex:1;}
+
+            @media only screen and (max-width:600px) 
+            {body{background-color:orange;}
+            /*the 600px in the media query is called a breakpoint*/
+            .row1 div{padding:0px;}
+            .row1{padding:0px}
+            .sidebar{display:none;}
+            }
+            /*vv this one is for the tabliet size and larger*/
+            @media only screen and (min-width:920px){
+                body{background-color: blue;}
+
+            }
+
+            /*^^ makes the selected item dissappear*/
+            /*overrides the codes on lines 13-15*/
+            .maincontent{
+                width:70%;
+                float:left;
+            }
+            .sidebar{
+                float:right;
+                width:20%;
+                border: 1px solid orange;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <h1>Flexbox</h1>
+    <div class="maincontent">
+
+        <!-- large width banner image -->
+        <img src="https://laferger.github.io/ist263/images/forever_orange.jpg" alt="large campus banner" class="banner">
+
+        <!-- smaller width banner image -->
+        <img src="https://laferger.github.io/ist263/images/forever_orange_small.jpg" alt="small campus banner" class="bannersmall">
+        
+        <!-- this row is coming from https://www.syracuse.edu/about/ -->
+        <div class="row1">
+            <div class="box1">
+                <img src="https://laferger.github.io/ist263/images/eighty-percent-numeral-800x533.png" alt="80 percent"><br>
+                <p>80% of Syracuse University students received some form of financial support totaling more than $414 million (2019-2020 data)</p>
+            </div>
+            <div class="box2">
+                <img src="https://laferger.github.io/ist263/images/eighty-seven-percent-800x533.png" alt="87 percent">
+                <p>87% placement outcome (Graduates in full-and part-time positions, military service, volunteer or service programs, and graduate school.)</p>
+            </div>
+            <div class="box3">
+                <img src="https://laferger.github.io/ist263/images/ninety-percent-800x533.png" alt="90 percent">
+                <p>Positions related to Career Goals</p>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <aside>
+            <h2> what does syracuse university tuition cost?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </aside>
+
+    </div>
+
+    </body>
+</html>

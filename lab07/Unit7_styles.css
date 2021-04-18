@@ -14,7 +14,7 @@ a:hover{color:#999999;}
 /* you can use any selector with pseudo selectors */ 
 body{
     background-image: url(images/logo_sized.png);
-    background-color:#d3c7ba;
+    background-color:#d19f6a;
     background-size: 200px;}
     /*size the background image*/
   p{
