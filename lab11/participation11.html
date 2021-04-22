@@ -1,0 +1,39 @@
+<!--Write a web page with basic tags 
+Write a form
+Usr the onblur event to bring up an alert box on your form
+alert should say "you left this form element"-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Participation Week 11: Wendy Chen </title>
+        <script>
+            /*code is named leftform it must have {} to start and end the named code*/
+            /*javascript is case sensitive*/
+            function Leaving() {
+           // alert('You left this form element');
+            /*alert is my function, parathesis after, inside quotes with a message, semi colon at the end of every line */
+            document.getElementById("message").innerHTML="You left this form element";
+            }
+           
+        </script>
+    </head>
+    <body>
+        
+        
+            <form action="mailto:wchen59@syr.edu" methods="POST">
+                <label for ="first">First</label>
+                <input type="text" name="first" id="first" onblur="Leaving();">
+                <label for ="last">Last</label>
+                <input type="text" name="last" id="last">
+                <input type="submit">
+
+            </form>
+      
+            <div id="message"></div><!--This is where I'm going to bring up the message-->
+
+
+    </body>
+</html>
+
