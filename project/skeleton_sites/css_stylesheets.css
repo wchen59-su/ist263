@@ -1,0 +1,59 @@
+/*resizing my images so that it fits the screen when it shrinks*/
+.banner{width:100%;} 
+.toast{max-width:100%;}
+.eggs{max-width:100%;}
+.kettle{max-width:100%;}
+.ricecooker{max-width:100%;}
+.spices{max-width:100%;}
+
+/*floating all my images */
+.toast{float:left;
+    margin: 0px 20px 10px 0px;/*combo values-top, right, bottom, and left*/}
+.eggs{float:left;
+    margin: 0px 20px 10px 0px;/*combo values-top, right, bottom, and left*/}
+.kettle{float:left;
+    margin: 0px 20px 10px 0px;/*combo values-top, right, bottom, and left*/}
+.ricecooker{float:left;
+    margin: 0px 20px 10px 0px;/*combo values-top, right, bottom, and left*/}
+.spices{float:left;
+    margin: 0px 20px 10px 0px;/*combo values-top, right, bottom, and left*/}
+.stopfloat{clear:both;}/*property to stop wrapping from float*/
+
+/*web colors and background*/
+nav{background-color: #d9b3ff;}
+nav a {color:black;} 
+nav a:hover{background-color:whitesmoke;}
+nav{padding: 10px;}
+nav{margin-bottom: 30px;}
+body {
+    background-color:lavenderblush;
+}
+
+/*contacts */
+.firstrow,.secondrow {display:flex}
+
+
+/*making it responsive*/
+@media only screen and (max-width:600px)
+{
+    nav a {display:block;}
+    span {display:none;}
+    img{width:200px;}
+
+}
+
+
+
+/*skip to content*/
+#skip{
+    position: absolute;
+    left:-999px;
+    background-color:white;
+    border:1px solid black;
+    
+}
+
+#skip:focus {
+    position:absolute;
+    left: 10px;
+}

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Contact Page </title>
+        <link rel ="stylesheet" href= "css_stylesheets.css">
 
 
     </head>
 
     <body>
         <nav> 
-            <a href="wchen59_food_index.html">Home </a> <span>|</span>
-            <a href="wchen59_food_starterpack.html">Cooking Starter Pack</a><span>|</span>
-            <a href="wchen59_food_recipes.html">Recipes </a><span>|</span>
-            <a href="wchen59_food_contacts.html">Contact me!</a>
+            <a href="wchen59_food_index.html"><strong>Home</strong></a> <span>|</span>
+            <a href="wchen59_food_starterpack.html"><strong>Cooking Starter Pack</strong></a><span>|</span>
+            <a href="wchen59_food_recipes.html"><strong>Recipes</strong> </a><span>|</span>
+            <a href="wchen59_food_contacts.html"><strong>Contact me!</strong></a>
             <a href="#maincontent" id="skip">Skip to Content</a>
 
             <!--Continue to add navigation files once tabs are created for index/home, creative tips/tools, recipes, contact -->
@@ -20,21 +21,23 @@
         
         <header>
            
-            <img src="../site_media/wchen59_food_banner.png" alt="Wendy's College Cookbook with 3 recipes images">
+            <img src="../site_media/wchen59_food_banner.png" alt="Wendy's College Cookbook with 3 recipes images" class=banner>
             
             <a id="maincontent"></a>
             
         </header>
         <main>
+            <div class="row1">
          
-            <section>
+            <div class="contactinfo">
                 <h1>Contact me!</h1>
                 <p>Hi there! I hope you enjoyed browsing through my cookbook, and hopefully you found some tricks and recipes helpful along your journey. This cookbook is personal to my experience of multiple trial and errors to create the recipes I share with you. My journey is far from ending; there is an endless oasis of knowledge to learn and new recipes to cultivate. Become a part of my community of food lovers! I welcome you to reach out. Share with me your favorite spice combinations and get featured on my website! 😊</p>
 
 
-            </section>
+            </div>
+            </div>
 
-
+            <div class="row2">
             <div class="form">
                 <br>
                 <form action="mailto:wchen59@syr.edu" methods="post">
@@ -51,9 +54,10 @@
 
                         <label for="salutation_mrs">Mrs.</label>
                         <input type="radio" name="salutation" id="salutation_mrs" value="Mrs." >
-
+                        <br>
                         <label for="firstname">Enter first name:</label>
                         <input type="text" name="firstname" id="firstname"> 
+                      
 
 
                         <label for="lastname">Enter last name:</label>
@@ -68,6 +72,7 @@
                    </fieldset>
             </form>
                 
+            </div>
             </div>
             <footer >
                 <hr>
