@@ -39,10 +39,11 @@ body {
     nav a {display:block;}
     span {display:none;}
     img{width:200px;}
+   
 
 }
-
-
+.form{display: flex;}
+.form{flex-wrap: wrap;}
 
 /*skip to content*/
 #skip{
