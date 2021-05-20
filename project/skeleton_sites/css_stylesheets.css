@@ -5,6 +5,8 @@
 .kettle{max-width:100%;}
 .ricecooker{max-width:100%;}
 .spices{max-width:100%;}
+.slide_image{max-width:100%;}
+
 
 /*floating all my images */
 .toast{float:left;
@@ -88,6 +90,8 @@ footer{font-family: 'Montserrat', sans-serif;}
     width:1200px;
     position:relative;
     margin:auto;
+    max-width:100%;
+
 }
 .slide_image {
     margin-right: 100px;
