@@ -26,69 +26,85 @@
     <a id="maincontent"></a> 
     <h1>College Cooking Starter Pack</h1>
 
-    <div id="slideshow-container">
-        <div id="big images">
-
-            <img src="../site_media/electric_water_kettle.PNG" alt="electric water kettle" id="kettle">
-            <img src="../site_media/rice_cooker.PNG" alt="electric rice cooker" id="ricecooker">
-            <img src="../site_media/spices.PNG" alt="various cooking spices" id="spices">
-       </div>
-       <div id="starter_info">
-            <div id="kettle_info">
-       
-                <h2>Electric Water Kettle</h2>
-                <p>Ding ding ding! You guessed it; an electric water kettle is essential for creative cooking! It is a good source of heat and very versatile. Any electronic water kettle should do, but I recommend getting one that is a decent size and with a wide opening. If you get a large kettle, that just means more liquids and foods you can make. If the opening is wide, it allows for easier cleaning and more creative ways to cook foods other than liquids. It is an efficient and tidy way for you to boil way with the click of a button. You do not need to worry about spillage, the stove, fire, etc. It puts your mind at ease, my friend. Additionally, you can make soups, make pasta, and even hotpot with it. Check out my recipes page for more information on how I use an electric water kettle. 😊</p>
-                </div>
-
-                <div id="ricecooker_info">
-                    <h2>Electric Rice Cooker</h2>
-                    
-
-                    <p>One of my all-time favorites; an electric rice cooker. This tool has literally been my ride or die when exploring new meals. In a dorm room without a kitchen? No stove? Have no fear, for an electric rice cooker is all of that. See, there is an instant pot, but waste your money when you can literally perform the same functions with a regular rice cooker? Here’s a secret I discovered in college; objects have many purposes and functions than their names entail. A rice cooker is not just for cooking rice. It is a non-stick cooking bowl on top of a source of heat. Just think about that, does that sound familiar? A pan or pot over a stove can also be considered as a cooking bowl placed on top of a source of heat. Wa-la~! Come check out my recipes to navigate through my explorations of using a rice cooker to makes stews, stir-fry, and even cake! Yep, it is possible to make a cake in a rice cooker. </p>
-                </div>
-                <div id="spice">
-
-                    <h2>Spices</h2>
-
-                    <p>Spices are unbelievably important when it comes to creative cooking. Spices are inexpensive and amazing ways to completely change the flavor profile of a dish. They are great at elevating an dish to the new level, delicious~! I think I might actually have more spices than ingredients, haha. Below is a list of spices that I always have with me. With these spices in my rack, I can make dishes from many different cuisines. Feel free to be inspired to curate your own spice list based off your own preferences. </p>
-                    
-                    <h3>My Spice List</h3>
-                    <div class="spice_list">
-                    <ul>
-                        <li>Salt and  Black Pepper </li>
-                        <li>Garlic Powder</li>
-                        <li>Onion Powder</li>
-                        <li>Cumin Powder</li>
-                        <li>Chili Powder</li>
-                        <li>Cayenee Powder</li>
-                        <li>Red Pepper Flakes</li>
-                        <li>Curry Powder</li>
-                        <li>Tumeric Powder</li>
-                        <li>Everything Bagel Seasoning</li>
-                        <li>All-Purpose Seasoning</li>
-                        <li>Italian Seasoning</li>
-                        <li>Five-Spice Seasoning</li>
-                        <li>Sesame Oil</li>
-                        <li>Soy Sauce</li>
-                        <li>Oyster Sauce</li>
-                    </ul>
-                </div>
-                </div>
-            <div id="clear"></div>
-                 <div id="thumbnails">
-
-            </div>
-         <footer >
-                <hr>
-                <br>
-            
-                &copy;Wendy Chen 2021
-                <div class="quote">A good meal does not require fancy tool nor ingredients. Let creativity and fun feed you. </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
         
-            </footer>
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides_fade");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+</head>
+
+<body>
+    <!--slide show container-->
+    <div class="slideshow-container">
+
+        <div class="mySlides_fade">
+            <div class="numbertext">1/3</div>
+
+            <div class="slide_image" >
+            <img src="../site_media/electric_water_kettle.PNG"> 
+            </div>
+            <div class="text">Ding ding ding! You guessed it; an electric water kettle is essential for creative cooking! It is a good source of heat and very versatile. Any electronic water kettle should do, but I recommend getting one that is a decent size and with a wide opening. If you get a large kettle, that just means more liquids and foods you can make. If the opening is wide, it allows for easier cleaning and more creative ways to cook foods other than liquids. It is an efficient and tidy way for you to boil way with the click of a button. You do not need to worry about spillage, the stove, fire, etc. It puts your mind at ease, my friend. Additionally, you can make soups, make pasta, and even hotpot with it. Check out my recipes page for more information on how I use an electric water kettle. 😊</div>
+        </div>
+
+        <div class="mySlides_fade">
+            <div class="numbertext">2/3</div>
+            <div class="slide_image" >
+            <img src="../site_media/rice_cooker.PNG">
+            </div>
+            <div class="text">One of my all-time favorites; an electric rice cooker. This tool has literally been my ride or die when exploring new meals. In a dorm room without a kitchen? No stove? Have no fear, for an electric rice cooker is all of that. See, there is an instant pot, but waste your money when you can literally perform the same functions with a regular rice cooker? Here’s a secret I discovered in college; objects have many purposes and functions than their names entail. A rice cooker is not just for cooking rice. It is a non-stick cooking bowl on top of a source of heat. Just think about that, does that sound familiar? A pan or pot over a stove can also be considered as a cooking bowl placed on top of a source of heat. Wa-la~! Come check out my recipes to navigate through my explorations of using a rice cooker to makes stews, stir-fry, and even cake! Yep, it is possible to make a cake in a rice cooker.</div>
+        </div>
+
+        <div class="mySlides_fade">
+            <div class="numbertext">3/3</div>
+            <div class="slide_image" >
+            <img src="../site_media/spices.PNG">
+
+            <div id="clear"></div>
+            </div>
+            <div class="text">Spices are unbelievably important when it comes to creative cooking. Spices are inexpensive and amazing ways to completely change the flavor profile of a dish. They are great at elevating an dish to the new level, delicious~! I think I might actually have more spices than ingredients, haha. Below is a list of spices that I always have with me. With these spices in my rack, I can make dishes from many different cuisines. Feel free to be inspired to curate your own spice list based off your own preferences. Some of my favorite are garlic powder, onion powder, cumin powder, all-purpose seasoning, and five-spice seasoning! 
+               
+            </div>
+        </div>
+        
 
 
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    </body>
+    <br>
+    <div id="clear"></div>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+</body>
 
 </html>
