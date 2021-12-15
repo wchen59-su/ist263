@@ -1,0 +1,9 @@
+PUT IT INTO FELX BOX
+create another div above the text area 
+and then display flex 
+put a right margin on the image with the spices 
+put a div tag around spice lists 
+
+book chapter 18: animations, it's all css, or w3schools. 
+javascript form submit
+syr collage
